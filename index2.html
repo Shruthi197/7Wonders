@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive registration page</title>
+    <link rel="stylesheet" href="90mm.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="container">
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons to buttons (note that the fa-spin class rotates the icon) -->
+<button class="buttonload">
+  <i class="fa fa-spinner fa-spin"></i>Loading
+</button>
+      <h1>
+        <div class="title">Registration</div></h1>
+         <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Full Name</span>
+              <input type= "text" placeholder="Enter your name" required>
+              
+            </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type= "text" placeholder="Enter your name">
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type= "text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone number</span>
+                <input type= "text" placeholder="Enter your Phoneno" required>
+              </div>
+              
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type= "text" placeholder="Enter Password" required>
+              </div>
+              <div class="container">
+                <form action="/action_page.php">
+              
+                  <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+              <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type= "text" placeholder="Confirm your Password" required>
+              </div>
+              <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>  
+                </div>
+                <div class="button">
+                <input type="submit" value="Register">
+                </div>
+                <button class="btn success">Success</button>
+                <button class="btn info">Info</button>
+                <button class="btn warning">Warning</button>
+                <button class="btn danger">Danger</button>
+                <button class="btn default">Default</button>
+                
+            </form>
+                
+
+      
+</body>
+</html>
